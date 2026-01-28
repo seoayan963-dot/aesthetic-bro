@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+< lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aesthetic Aura | Complete Aesthetic Inspiration</title>
+    <meta name="description" content="Discover all aesthetic categories: mehndi designs, makeup, jewelry, anime art, nature visuals, and girls lifestyle inspiration.">
+    
+    <!-- Pinterest Optimization -->
+    <meta name="pinterest" content="nopin" description="Aesthetic Aura - Complete aesthetic inspiration for creative souls">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+    
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --beige: #F8F4E9;
+            --blush: #F5E1E2;
+            --cream: #FFFCF5;
+            --sage: #E1E8D9;
+            --soft-brown: #D8C3B0;
+            --dusty-pink: #D8A7B1;
+            --dark-brown: #8B7355;
+            --charcoal: #3A3A3A;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            color: var(--charcoal);
+            background-color: var(--cream);
+            line-height: 1.6;
+        }
+        
+        h1, h2, h3, h4, h5 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 500;
+            color: var(--dark-brown);
+        }
+        
+        /* Navigation */
+        .navbar {
+            background-color: rgba(255, 252, 245, 0.95);
+            padding: 1.2rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 15px rgba(139, 115, 85, 0.05);
+            border-bottom: 1px solid rgba(216, 195, 176, 0.3);
+        }
+        
+        .logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2.2rem;
+            font-weight: 600;
+            color: var(--dark-brown);
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo span {
+            color: var(--dusty-pink);
+        }
+        
+        .logo i {
+            margin-right: 10px;
+            color: var(--dusty-pink);
+        }
+        
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
+        
+        .nav-links li {
+            margin-left: 2rem;
+        }
+        
+        .nav-links a {
+            text-decoration: none;
+            color: var(--charcoal);
+            font-weight: 500;
+            font-size: 1.05rem;
+            transition: color 0.3s;
+            position: relative;
+            padding-bottom: 5px;
+        }
+        
+        .nav-links a:hover {
+            color: var(--dusty-pink);
+        }
+        
+        .nav-links a.active {
+            color: var(--dusty-pink);
+        }
+        
+        .nav-links a.active:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: var(--dusty-pink);
+            bottom: 0;
+            left: 0;
+        }
+        
+        .mobile-menu-btn {
+            display: none;
+            font-size: 1.5rem;
+            background: none;
+            border: none;
+            color: var(--dark-brown);
+            cursor: pointer;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(248, 244, 233, 0.9), rgba(248, 244, 233, 0.7)), 
+                        url('https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80');
+            background-size: cover;
+            background-position: center 30%;
+            padding: 6rem 5%;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+        
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            color: var(--dark-brown);
+        }
+        
+        .hero p {
+            font-size: 1.3rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--charcoal);
+        }
+        
+        .tagline {
+            font-style: italic;
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.5rem;
+            color: var(--dusty-pink);
+            margin-bottom: 2rem;
+        }
+        
+        /* Categories Section */
+        .categories-section {
+            padding: 0 5% 5rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+        
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 80px;
+            height: 2px;
+            background-color: var(--dusty-pink);
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 2.5rem;
+        }
+        
+        .category-card {
+            background-color: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(139, 115, 85, 0.08);
+            transition: transform 0.3s, box-shadow 0.3s;
+            height: 100%;
+        }
+        
+        .category-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 30px rgba(139, 115, 85, 0.12);
+        }
+        
+        .card-header {
+            padding: 1.5rem 1.5rem 0.5rem;
+        }
+        
+        .card-header h3 {
+            font-size: 1.8rem;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-header i {
+            margin-right: 10px;
+            color: var(--dusty-pink);
+        }
+        
+        .card-body {
+            padding: 0 1.5rem 1.5rem;
+        }
+        
+        .card-description {
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+            font-size: 1.05rem;
+        }
+        
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .aesthetic-image {
+            width: 100%;
+            height: 110px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s, opacity 0.3s;
+        }
+        
+        .aesthetic-image:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        
+        .btn-explore {
+            display: inline-block;
+            background-color: var(--sage);
+            color: var(--dark-brown);
+            padding: 0.7rem 1.5rem;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 500;
+            transition: background-color 0.3s;
+            border: 1px solid rgba(139, 115, 85, 0.2);
+        }
+        
+        .btn-explore:hover {
+            background-color: var(--soft-brown);
+        }
+        
+        /* Color-coded categories */
+        .mehndi-card { border-top: 4px solid #D8A7B1; }
+        .makeup-card { border-top: 4px solid #E1E8D9; }
+        .jewelry-card { border-top: 4px solid #D8C3B0; }
+        .anime-card { border-top: 4px solid #F5E1E2; }
+        .nature-card { border-top: 4px solid #A8C8B9; }
+        .lifestyle-card { border-top: 4px solid #E6C9C9; }
+        
+        /* Special Mehndi Heart Pattern */
+        .heart-pattern {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.8rem;
+            color: var(--dusty-pink);
+            text-align: center;
+            margin: 1rem 0;
+            letter-spacing: 5px;
+        }
+        
+        /* Featured Collections Section */
+        .featured-section {
+            padding: 5rem 5%;
+            background-color: var(--beige);
+        }
+        
+        .featured-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .featured-card {
+            background-color: white;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 10px 25px rgba(139, 115, 85, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .featured-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .featured-img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+        
+        .featured-content {
+            padding: 1.5rem;
+        }
+        
+        .featured-content h3 {
+            font-size: 1.5rem;
+            margin-bottom: 0.8rem;
+        }
+        
+        .featured-content p {
+            color: var(--charcoal);
+            margin-bottom: 1rem;
+        }
+        
+        /* About Section */
+        .about-section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .about-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        
+        .about-image {
+            flex: 1;
+            min-width: 300px;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(139, 115, 85, 0.1);
+        }
+        
+        .about-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+            transition: transform 0.5s;
+        }
+        
+        .about-image:hover img {
+            transform: scale(1.03);
+        }
+        
+        .about-content {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .about-content h2 {
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-brown);
+        }
+        
+        .about-content p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--charcoal);
+        }
+        
+        .mission-vision {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .mission-box, .vision-box {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 25px rgba(139, 115, 85, 0.08);
+        }
+        
+        .mission-box h3, .vision-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: var(--dusty-pink);
+            display: flex;
+            align-items: center;
+        }
+        
+        .mission-box h3 i, .vision-box h3 i {
+            margin-right: 10px;
+        }
+        
+        /* Contact Section */
+        .contact-section {
+            padding: 5rem 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .contact-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+        }
+        
+        .contact-info {
+            flex: 1;
+            min-width: 300px;
+        }
+        
+        .contact-form-container {
+            flex: 1;
+            min-width: 300px;
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(139, 115, 85, 0.1);
+        }
+        
+        .contact-info h2, .contact-form-container h2 {
+            font-size: 2.2rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-brown);
+        }
+        
+        .contact-info p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            color: var(--charcoal);
+        }
+        
+        .contact-details {
+            margin-top: 2rem;
+        }
+        
+        .contact-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+        
+        .contact-icon {
+            background-color: var(--blush);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+            color: var(--dark-brown);
+            font-size: 1.2rem;
+        }
+        
+        .contact-text h4 {
+            font-size: 1.2rem;
+            margin-bottom: 0.3rem;
+        }
+        
+        .contact-text p, .contact-text a {
+            color: var(--charcoal);
+            text-decoration: none;
+        }
+        
+        .contact-text a:hover {
+            color: var(--dusty-pink);
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 500;
+            color: var(--dark-brown);
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 0.8rem 1rem;
+            border: 1px solid var(--soft-brown);
+            border-radius: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            background-color: var(--cream);
+            transition: border-color 0.3s;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--dusty-pink);
+        }
+        
+        textarea.form-control {
+            min-height: 150px;
+            resize: vertical;
+        }
+        
+        .btn-submit {
+            background-color: var(--dusty-pink);
+            color: white;
+            border: none;
+            padding: 0.9rem 2rem;
+            border-radius: 30px;
+            font-weight: 500;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%;
+        }
+        
+        .btn-submit:hover {
+            background-color: var(--dark-brown);
+        }
+        
+        /* Social Links */
+        .social-links-contact {
+            display: flex;
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+        
+        .social-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 45px;
+            height: 45px;
+            background-color: var(--blush);
+            border-radius: 50%;
+            color: var(--dark-brown);
+            font-size: 1.2rem;
+            transition: all 0.3s;
+        }
+        
+        .social-link:hover {
+            transform: translateY(-5px);
+            background-color: var(--dusty-pink);
+            color: white;
+        }
+        
+        /* Footer */
+        .footer {
+            background-color: var(--beige);
+            padding: 3rem 5%;
+            border-top: 1px solid rgba(216, 195, 176, 0.5);
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin-bottom: 2rem;
+            padding-right: 2rem;
+        }
+        
+        .footer-logo {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 2rem;
+            color: var(--dark-brown);
+            margin-bottom: 1rem;
+        }
+        
+        .footer-description {
+            color: var(--charcoal);
+            margin-bottom: 1.5rem;
+        }
+        
+        .social-icons {
+            display: flex;
+            gap: 1rem;
+        }
+        
+        .social-icons a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            color: var(--dark-brown);
+            font-size: 1.2rem;
+            transition: all 0.3s;
+            box-shadow: 0 3px 10px rgba(139, 115, 85, 0.1);
+        }
+        
+        .social-icons a:hover {
+            transform: translateY(-3px);
+            color: var(--dusty-pink);
+        }
+        
+        .footer-heading {
+            font-size: 1.3rem;
+            margin-bottom: 1.5rem;
+            color: var(--dark-brown);
+        }
+        
+        .footer-links {
+            list-style: none;
+        }
+        
+        .footer-links li {
+            margin-bottom: 0.8rem;
+        }
+        
+        .footer-links a {
+            color: var(--charcoal);
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: var(--dusty-pink);
+        }
+        
+        .copyright {
+            text-align: center;
+            padding-top: 2rem;
+            margin-top: 2rem;
+            border-top: 1px solid rgba(216, 195, 176, 0.5);
+            color: var(--charcoal);
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .categories-grid, .featured-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .hero h1 {
+                font-size: 3rem;
+            }
+        }
+        
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background-color: white;
+                padding: 1rem;
+                box-shadow: 0 5px 15px rgba(139, 115, 85, 0.1);
+            }
+            
+            .nav-links.active {
+                display: flex;
+            }
+            
+            .nav-links li {
+                margin: 0.5rem 0;
+            }
+            
+            .mobile-menu-btn {
+                display: block;
+            }
+            
+            .hero {
+                padding: 4rem 5%;
+            }
+            
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero p {
+                font-size: 1.1rem;
+            }
+            
+            .categories-grid, .featured-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-container, .contact-container {
+                flex-direction: column;
+            }
+            
+            .mission-vision {
+                flex-direction: column;
+            }
+            
+            .footer-section {
+                min-width: 100%;
+                margin-bottom: 2rem;
+                padding-right: 0;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .section-title {
+                font-size: 2rem;
+            }
+            
+            .card-header h3 {
+                font-size: 1.5rem;
+            }
+            
+            .image-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            
+            .aesthetic-image {
+                height: 130px;
+            }
+            
+            .contact-form-container {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<bod>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">
+            <i class="fas fa-palette"></i>
+            Aesthetic <span>Aura</span>
+        </a>
+        
+        <button class="mobile-menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        
+        <ul class="nav-links">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Aesthetic Aura</h1>
+        <p class="tagline">Where beauty meets inspiration</p>
+        <p>Discover a curated collection of aesthetic visuals, from intricate mehndi designs to breathtaking nature scenes, all designed to inspire your creative journey.</p>
+    </section>
+
+    <!-- Main Categories Section -->
+    <section class="categories-section">
+        <h2 class="section-title">Explore All Aesthetic Collections</h2>
+        
+        <div class="categories-grid">
+            <!-- 1. Mehndi / Henna Designs -->
+            <div class="category-card mehndi-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-hands"></i> Mehndi & Henna Designs</h3>
+                </div>
+                <div class="card-body">
+                    
+                    <p class="card-description">Intricate henna patterns and modern mehndi art that celebrate cultural beauty and contemporary design fusion.</p>
+                    
+                    <div class="image-grid">
+                        <img src="1.jpg" alt="Heart pattern mehndi design on hand" class="aesthetic-image">
+                        <img src="2.jpg" alt="Floral and geometric mehndi pattern" class="aesthetic-image">
+                        <img src="3.jpg" alt="Traditional bridal mehndi design" class="aesthetic-image">
+                        <img src="4.jpeg" alt="Modern minimalist mehndi art" class="aesthetic-image">
+                        <img src="5.jpg" alt="Intricate mandala mehndi pattern" class="aesthetic-image">
+                        <img src="6.jpg" alt="Detailed peacock mehndi design" class="aesthetic-image">
+                    </div>
+                    
+                    <div class="heart-pattern" style="font-size: 1.2rem; color: var(--dark-brown);">Heart-Inspired Collection</div>
+                    
+                    <a href="#" class="btn-explore">Explore All Mehndi Designs</a>
+                </div>
+            </div>
+            
+            <!-- 2. Makeup & Beauty -->
+            <div class="category-card makeup-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-eye"></i> Makeup & Beauty</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Soft glam, editorial looks, and beauty aesthetics that highlight individuality and artistic expression.</p>
+                    
+                    <div class="image-grid">
+                        <img src="11.jpeg" alt="Soft glam makeup look" class="aesthetic-image">
+                        <img src="22.jpg" alt="Makeup brushes and products" class="aesthetic-image">
+                        <img src="33.jpg" alt="Glitter eye makeup" class="aesthetic-image">
+                        <img src="44.webp" alt="Natural beauty aesthetic" class="aesthetic-image">
+                        <img src="55.webp" alt="Editorial makeup look" class="aesthetic-image">
+                        <img src="66.webp" alt="Beauty product flat lay" class="aesthetic-image">
+                    </div>
+                    
+                    <a href="#" class="btn-explore">Explore Beauty Aesthetics</a>
+                </div>
+            </div>
+            
+            <!-- 3. Jewelry & Accessories -->
+            <div class="category-card jewelry-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-gem"></i> Jewelry & Accessories</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Elegant jewelry pieces and fashion accessories that complete any aesthetic look with sophistication.</p>
+                    
+                    <div class="image-grid">
+                        <img src="M.webp" alt="Dainty gold jewelry" class="aesthetic-image">
+                        <img src="N.webp" alt="Pearl necklace aesthetic" class="aesthetic-image">
+                        <img src="O.jpg" alt="Layered necklaces" class="aesthetic-image">
+                        <img src="P.webp" alt="Elegant rings collection" class="aesthetic-image">
+                        <img src="Q.jpg" alt="Delicate bracelet stack" class="aesthetic-image">
+                        <img src="R.jpg" alt="Aesthetic jewelry flat lay" class="aesthetic-image">
+                    </div>
+                    
+                    <a href="#" class="btn-explore">Explore Jewelry</a>
+                </div>
+            </div>
+            
+            <!-- 4. Anime Art & Aesthetic -->
+            <div class="category-card anime-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-dragon"></i> Anime Art & Aesthetic</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Original anime-inspired illustrations and aesthetic visuals that blend fantasy with artistic expression.</p>
+                    
+                    <div class="image-grid">
+                        <img src="a.webp" alt="Anime girl aesthetic" class="aesthetic-image">
+                        <img src="s.webp" alt="Pastel anime art" class="aesthetic-image">
+                        <img src="d.webp" alt="Fantasy anime illustration" class="aesthetic-image">
+                        <img src="f.jpg" alt="Dreamy anime aesthetic" class="aesthetic-image">
+                        <img src="g.webp" alt="Anime character design" class="aesthetic-image">
+                        <img src="k.jpg" alt="Colorful anime art" class="aesthetic-image">
+                    </div>
+                    
+                    <a href="#" class="btn-explore">Explore Anime Art</a>
+                </div>
+            </div>
+            
+            <!-- 5. Mountains & Nature -->
+            <div class="category-card nature-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-mountain"></i> Mountains & Nature</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Breathtaking landscapes, serene nature scenes, and mountain aesthetics that inspire wanderlust and peace.</p>
+                    
+                    <div class="image-grid">
+                        <img src="!.jpg" alt="Mountain landscape at sunrise" class="aesthetic-image">
+                        <img src="@.webp" alt="Forest path aesthetic" class="aesthetic-image">
+                        <img src="-.jpg" alt="Misty mountain view" class="aesthetic-image">
+                        <img src="$.jpg" alt="Serene lake landscape" class="aesthetic-image">
+                        <img src="=.jpg" alt="Snow-capped mountains" class="aesthetic-image">
+                        <img src="^.jpg" alt="Nature aesthetic photography" class="aesthetic-image">
+                    </div>
+                    
+                    <a href="#" class="btn-explore">Explore Nature</a>
+                </div>
+            </div>
+            
+            <!-- 6. Girls Lifestyle & Fashion -->
+            <div class="category-card lifestyle-card">
+                <div class="card-header">
+                    <h3><i class="fas fa-tshirt"></i> Girls Lifestyle & Fashion</h3>
+                </div>
+                <div class="card-body">
+                    <p class="card-description">Fashion inspiration, lifestyle aesthetics, and visual stories that celebrate feminine expression and style.</p>
+                    
+                    <div class="image-grid">
+                        <img src="zz.jpg" alt="Fashion flat lay aesthetic" class="aesthetic-image">
+                        <img src="xx.webp" alt="Girls lifestyle aesthetic" class="aesthetic-image">
+                        <img src="cc.jpg" alt="Minimal fashion style" class="aesthetic-image">
+                        <img src="vv.jpg" alt="Cozy aesthetic lifestyle" class="aesthetic-image">
+                        <img src="bb.webp" alt="Feminine fashion inspiration" class="aesthetic-image">
+                        <img src="nn.jpg" alt="Aesthetic lifestyle photography" class="aesthetic-image">
+                    </div>
+                    
+                    <a href="#" class="btn-explore">Explore Lifestyle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections Section -->
+    <section class="featured-section">
+        <h2 class="section-title">Featured Collections</h2>
+        
+        <div class="featured-grid">
+            <div class="featured-card">
+                <img src="1.jpg" alt="Modern Mehndi" class="featured-img">
+                <div class="featured-content">
+                    <h3>Modern Mehndi Collection</h3>
+                    <p>Contemporary designs that blend tradition with modern aesthetics.</p>
+                    <a href="#" class="btn-explore">View Collection</a>
+                </div>
+            </div>
+            
+            <div class="featured-card">
+                <img src="11.jpeg" alt="Soft Glam Makeup" class="featured-img">
+                <div class="featured-content">
+                    <h3>Soft Glam Beauty Guide</h3>
+                    <p>Step-by-step tutorials for achieving elegant everyday makeup looks.</p>
+                    <a href="#" class="btn-explore">View Collection</a>
+                </div>
+            </div>
+            
+            <div class="featured-card">
+                <img src="zz.jpg" alt="Mountain Aesthetic" class="featured-img">
+                <div class="featured-content">
+                    <h3>Girls aesthetic</h3>
+                    <p>A GIRL STANDING IN A AESTHETIC POSE.</p>
+                    <a href="#" class="btn-explore">View Collection</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2 class="section-title">About Aesthetic Aura</h2>
+        
+        <div class="about-container">
+            <div class="about-image">
+                <img src="https://images.unsplash.com/photo-1518895949257-7621c3c786d7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Aesthetic workspace with creative tools">
+            </div>
+            
+            <div class="about-content">
+                <h2>Our Story</h2>
+                <p>Welcome to <strong>Aesthetic Aura</strong>, a digital sanctuary where beauty, creativity, and inspiration converge. Founded in 2023, our platform was born from a passion for visual storytelling and the desire to create a space where aesthetic appreciation meets artistic expression.</p>
+                
+                <p>We believe that aesthetics are more than just visuals—they're emotional experiences that connect us to beauty in everyday life. From the intricate patterns of mehndi art to the serene beauty of mountain landscapes, we curate content that speaks to the soul and inspires creativity.</p>
+                
+                <p>Our name "Aesthetic Aura" reflects our mission: to create an atmosphere (aura) of beauty (aesthetic) that surrounds and uplifts our community of creators, dreamers, and beauty enthusiasts.</p>
+            </div>
+        </div>
+        
+        <div class="mission-vision">
+            <div class="mission-box">
+                <h3><i class="fas fa-bullseye"></i> Our Mission</h3>
+                <p>To inspire creativity and celebrate beauty through curated aesthetic content that empowers individuals to express themselves authentically and find inspiration in everyday moments.</p>
+            </div>
+            
+            <div class="vision-box">
+                <h3><i class="fas fa-eye"></i> Our Vision</h3>
+                <p>To become the leading digital destination for aesthetic inspiration, building a global community that appreciates and creates beauty in all its diverse forms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2 class="section-title">Get In Touch</h2>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Create Together</h2>
+                <p>Whether you're looking for collaboration opportunities, have questions about our content, or just want to share your aesthetic journey, we'd love to hear from you.</p>
+                
+                <div class="contact-details">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Email</h4>
+                            <a href="mailto:aesthetiaura366@gmail.com">aesthetiaura366@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Response Time</h4>
+                            <p>We typically respond within 24-48 hours</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <div class="contact-text">
+                            <h4>Collaborations</h4>
+                            <p>Open to brand partnerships and creative collaborations</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="social-links-contact">
+                    <a href="#" class="social-link"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="contact-form-container">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" class="form-control" placeholder="Your name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" class="form-control" placeholder="you@example.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" class="form-control" placeholder="How can we help you?" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" class="form-control" placeholder="Tell us about your project, question, or collaboration idea..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <div class="footer-logo">Aesthetic Aura</div>
+                <p class="footer-description">A curated space for aesthetic inspiration, beauty, and creative expression. Join our community of like-minded creatives.</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-heading">Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-heading">All Categories</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Mehndi Designs</a></li>
+                    <li><a href="#">Makeup & Beauty</a></li>
+                    <li><a href="#">Jewelry & Accessories</a></li>
+                    <li><a href="#">Anime Art</a></li>
+                    <li><a href="#">Nature & Mountains</a></li>
+                    <li><a href="#">Girls Lifestyle</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3 class="footer-heading">Newsletter</h3>
+                <p class="footer-description">Subscribe for weekly aesthetic inspiration and exclusive content.</p>
+                <form id="newsletter-form" style="display: flex; margin-top: 10px;">
+                    <input type="email" placeholder="Your email" style="flex: 1; padding: 10px; border: 1px solid var(--soft-brown); border-radius: 4px 0 0 4px;">
+                    <button type="submit" style="background-color: var(--dusty-pink); color: white; border: none; padding: 0 15px; border-radius: 0 4px 4px 0; cursor: pointer;">Join</button>
+                </form>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2023 Aesthetic Aura. All rights reserved. | Email: <a href="mailto:aesthetiaura366@gmail.com">aesthetiaura366@gmail.com</a></p>
+            <p>Designed for Pinterest optimization and aesthetic inspiration</p>
+        </div>
+    </footer>
+
+    <scri>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            const nav = document.querySelector('.nav-links');
+            nav.classList.toggle('active');
+        });
+        
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const nav = document.querySelector('.nav-links');
+            const menuBtn = document.querySelector('.mobile-menu-btn');
+            
+            if (!nav.contains(event.target) && !menuBtn.contains(event.target) && window.innerWidth <= 768) {
+                nav.classList.remove('active');
+            }
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    e.preventDefault();
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu after clicking
+                    if(window.innerWidth <= 768) {
+                        document.querySelector('.nav-links').classList.remove('active');
+                    }
+                }
+            });
+        });
+        
+        // Contact form submission
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            
+            alert(`Thank you, ${name}! Your message has been sent to aesthetiaura366@gmail.com. We'll respond to you at ${email} within 24-48 hours.`);
+            this.reset();
+        });
+        
+        // Newsletter form submission
+        document.getElementById('newsletter-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const email = this.querySelector('input[type="email"]').value;
+            if (email) {
+                alert('Thank you for subscribing to Aesthetic Aura! You\'
